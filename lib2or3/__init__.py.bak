@@ -68,7 +68,7 @@ def classify(filename):
 def main(error_if_not=None):
     """Writes 2 or 3 and a newline to stdout, uses exit code for error_if_not"""
     r = classify(sys.argv[-1])
-    print(r)
+    print r
     if error_if_not is not None:
         sys.exit(0 if r == error_if_not else r)
 
